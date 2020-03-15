@@ -1,0 +1,20 @@
+{
+    "name": "KorStrix.Tutorial",
+    "references": [
+        "KorStrix.GetComponentAttribute.Runtime",
+        "KorStrix.UIFramework.Runtime",
+        "KorStrix.UnityPattern.Runtime",
+        "UnityEngine.TestRunner",
+        "UnityEditor.TestRunner"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "nunit.framework.dll"
+    ],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": []
+}
