@@ -1,9 +1,6 @@
 {
     "name": "KorStrix.Tutorial",
     "references": [
-        "KorStrix.GetComponentAttribute.Runtime",
-        "KorStrix.UIFramework.Runtime",
-        "KorStrix.UnityPattern.Runtime"
     ],
     "optionalUnityReferences": [
         "TestAssemblies"
