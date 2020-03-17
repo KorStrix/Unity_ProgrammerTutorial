@@ -30,10 +30,10 @@ jobs:
         with:
           lfs: true
 
-      - name: Commit changes
+      - name: Commit CS
         uses: EndBug/add-and-commit@v4
         with:
           message: "Add the very useful text file"
-          add: "*.txt"
+          add: "./CSharp/"
           cwd: "./pathToRepo/"
           force: true
