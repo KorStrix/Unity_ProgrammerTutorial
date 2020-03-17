@@ -31,9 +31,13 @@ jobs:
           lfs: true
 
       - name: Commit CS
-        uses: EndBug/add-and-commit@v4
+        uses: andstor/copycat-action@v3
         with:
-          message: "Add the very useful text file"
-          add: "./CSharp/*.cs"
-          cwd: "./.Tutorial_Unity/Packages/Tutorial/"
-          force: false
+          personal_token: ${{ secrets.PERSONAL_TOKEN }}
+          src_path: /CSharp/.
+          dst_path: /.Tutorial_Unity/Packages/Tutorial/Csharp/."
+          dst_repo_name: andstor.github.io
+          dst_branch: master
+          src_branch: master
+          username: nutsbot
+          email: andr3.storhaug+bot@gmail.com
