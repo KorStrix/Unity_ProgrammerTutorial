@@ -34,16 +34,15 @@ jobs:
         with:
           lfs: true
 
-      - name: Commit to Unity Project repository
-        uses: drud/action-cross-commit@master
+      - name: Commit changes
+        uses: EndBug/add-and-commit@v4
         with:
-          source-folder: Csharp
-          destination-repository: https://<korstrix>:${{ secrets.user_token }}@github.com/org/dest-repo
-          destination-folder: .
-          destination-branch: master
-          git-user: "CI" 
-          git-user-email: git-user@email.com
-          excludes: Csharp
+          author_name: Strix
+          author_email: korstrix@example.com
+          message: "Your commit message"
+          add: "*.js"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - uses: actions/cache@v1.1.0
         with:
