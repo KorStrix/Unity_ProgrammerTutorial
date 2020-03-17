@@ -34,7 +34,7 @@ jobs:
         uses: andstor/copycat-action@v3
         with:
           personal_token: ${{ secrets.PERSONAL_TOKEN }}
-          src_path: /CSharp/.
-          dst_path: /.Tutorial_Unity/Packages/Tutorial/CSharp/."
+          src_path: CSharp/.
+          dst_path: .Tutorial_Unity/Packages/Tutorial/CSharp/."
           dst_repo_name: Unity_ProgrammerTutorial
-          dst_owner: CI
+          dst_owner: KorStrix
