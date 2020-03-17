@@ -37,3 +37,4 @@ jobs:
           src_path: /CSharp/.
           dst_path: /.Tutorial_Unity/Packages/Tutorial/CSharp/."
           dst_repo_name: Unity_ProgrammerTutorial
+          dst_owner: CI
