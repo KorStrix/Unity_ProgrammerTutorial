@@ -77,7 +77,7 @@ public class LinqTest
 
 
         // Assert
-        Debug.Log("노땅 리스트 ㅋㅋ");
+        Debug.Log("30대 리스트");
         foreach (var pHuman in arr_AgeOver_30)
             Debug.Log(pHuman.ToString());
 

@@ -3,18 +3,16 @@
     "references": [
         "KorStrix.GetComponentAttribute.Runtime",
         "KorStrix.UIFramework.Runtime",
-        "KorStrix.UnityPattern.Runtime",
-        "UnityEngine.TestRunner",
-        "UnityEditor.TestRunner"
+        "KorStrix.UnityPattern.Runtime"
+    ],
+    "optionalUnityReferences": [
+        "TestAssemblies"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
     "overrideReferences": true,
-    "precompiledReferences": [
-        "nunit.framework.dll"
-    ],
+    "precompiledReferences": [],
     "autoReferenced": false,
-    "defineConstraints": [],
-    "versionDefines": []
+    "defineConstraints": []
 }
