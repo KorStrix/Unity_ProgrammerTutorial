@@ -24,10 +24,6 @@ jobs:
           - .Tutorial_Unity
         unityVersion:
           - 2019.2.11f1
-        targetPlatform:
-          - StandaloneWindows64 # Build a Windows 64-bit standalone.
-          - iOS # Build an iOS player.
-          - Android
 
     steps:
       - uses: actions/checkout@v2
@@ -37,27 +33,7 @@ jobs:
       - name: Commit changes
         uses: EndBug/add-and-commit@v4
         with:
-          author_name: Strix
-          author_email: korstrix@example.com
-          message: "Your commit message"
-          add: "*.js"
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - uses: actions/cache@v1.1.0
-        with:
-          path: ${{ matrix.projectPath }}/Library
-          key: Library-${{ matrix.projectPath }}-${{ matrix.targetPlatform }}
-          restore-keys: |
-            Library-${{ matrix.projectPath }}-
-            Library-
-
-      - uses: webbertakken/unity-test-runner@v1.3
-        id: testRunner
-        with:
-          projectPath: ${{ matrix.projectPath }}
-          unityVersion: ${{ matrix.unityVersion }}
-      - uses: actions/upload-artifact@v1
-        with:
-          name: Test results (all modes)
-          path: ${{ steps.testRunner.outputs.artifactsPath }}
+          message: "Add the very useful text file"
+          add: "*.txt"
+          cwd: "./pathToRepo/"
+          force: true
