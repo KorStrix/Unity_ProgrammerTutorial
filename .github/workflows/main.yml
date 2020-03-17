@@ -34,6 +34,6 @@ jobs:
         uses: EndBug/add-and-commit@v4
         with:
           message: "Add the very useful text file"
-          add: "/CSharp/."
-          cwd: "/.Tutorial_Unity/Packages/Tutorial/CSharp/"
-          force: true
+          add: "./CSharp/"
+          cwd: "./.Tutorial_Unity/Packages/Tutorial/"
+          force: false
