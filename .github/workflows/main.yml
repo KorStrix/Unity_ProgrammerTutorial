@@ -35,9 +35,5 @@ jobs:
         with:
           personal_token: ${{ secrets.PERSONAL_TOKEN }}
           src_path: /CSharp/.
-          dst_path: /.Tutorial_Unity/Packages/Tutorial/Csharp/."
-          dst_repo_name: andstor.github.io
-          dst_branch: master
-          src_branch: master
-          username: nutsbot
-          email: andr3.storhaug+bot@gmail.com
+          dst_path: /.Tutorial_Unity/Packages/Tutorial/CSharp/."
+          dst_repo_name: Unity_ProgrammerTutorial
