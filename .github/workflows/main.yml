@@ -33,6 +33,18 @@ jobs:
       - uses: actions/checkout@v2
         with:
           lfs: true
+
+      - name: Commit to Unity Project repository
+        uses: drud/action-cross-commit@master
+        with:
+          source-folder: Csharp
+          destination-repository: https://<korstrix>:${{ secrets.user_token }}@github.com/org/dest-repo
+          destination-folder: .
+          destination-branch: master
+          git-user: "CI" 
+          git-user-email: git-user@email.com
+          excludes: Csharp
+
       - uses: actions/cache@v1.1.0
         with:
           path: ${{ matrix.projectPath }}/Library
@@ -40,6 +52,7 @@ jobs:
           restore-keys: |
             Library-${{ matrix.projectPath }}-
             Library-
+
       - uses: webbertakken/unity-test-runner@v1.3
         id: testRunner
         with:
