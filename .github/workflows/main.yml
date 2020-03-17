@@ -35,5 +35,5 @@ jobs:
         with:
           message: "Add the very useful text file"
           add: "./CSharp/"
-          cwd: "./.Tutorial_Unity/Packages/Tutorial/CSharp/"
+          cwd: "./.Tutorial_Unity/Packages/Tutorial/"
           force: false
