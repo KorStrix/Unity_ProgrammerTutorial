@@ -19,7 +19,7 @@ jobs:
         personal_token: ${{ secrets.PERSONAL_TOKEN }}
         src_path: /.
         dst_path: /UnityProject/Packages/
-        dst_owner: andstor
+        dst_owner: KorStrix
         dst_repo_name: Unity_UnitTestTester
         dst_branch: master
         clean: true
