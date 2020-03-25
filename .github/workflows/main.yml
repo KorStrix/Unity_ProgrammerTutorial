@@ -17,12 +17,12 @@ jobs:
       uses: andstor/copycat-action@v3
       with:
         personal_token: ${{ secrets.PERSONAL_TOKEN }}
-        src_path: /CSharp_Tutorial/.
+        src_path: /.
         dst_path: /UnityProject/Packages/CSharp_Tutorial/
         dst_owner: KorStrix
         dst_repo_name: Unity_UnitTestTester
         dst_branch: master
         clean: true
         src_branch: master
-        username: KorStrixBot
-        email: KorStrixBot@gmail.com
+        username: KorStrixCI
+        exclude: .*
