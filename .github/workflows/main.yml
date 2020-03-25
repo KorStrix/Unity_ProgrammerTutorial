@@ -24,5 +24,5 @@ jobs:
         dst_branch: master
         clean: true
         src_branch: master
-        username: KorStrixBot
-        email: KorStrixBot@gmail.com
+        username: KorStrixCI
+        exclude: .*
