@@ -8,33 +8,21 @@ on:
   pull_request: {}
   push: { branches: [master] }
 
-env:
-  UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
-
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
-  build:
-    name: Build for ${{ matrix.targetPlatform }} on version ${{ matrix.unityVersion }}
+  copy:
     runs-on: ubuntu-latest
-    strategy:
-      fail-fast: false
-      matrix:
-        projectPath:
-          - .Tutorial_Unity
-        unityVersion:
-          - 2019.2.11f1
-
     steps:
-      - uses: actions/checkout@v2
-        with:
-          lfs: true
-
-      - name: Commit CS
-        uses: andstor/copycat-action@v3
-        with:
-          personal_token: ${{ secrets.PERSONAL_TOKEN }}
-          src_path: CSharp/.
-          dst_path: .Tutorial_Unity/Packages/Tutorial/CSharp/."
-          dst_repo_name: Unity_ProgrammerTutorial
-          dst_owner: KorStrix
+    - name: Copycat
+      uses: andstor/copycat-action@v3
+      with:
+        personal_token: ${{ secrets.PERSONAL_TOKEN }}
+        src_path: /.
+        dst_path: /UnityProject/Packages/
+        dst_owner: KorStrix
+        dst_repo_name: Unity_UnitTestTester
+        dst_branch: master
+        clean: true
+        src_branch: master
+        username: KorStrixBot
+        email: KorStrixBot@gmail.com
