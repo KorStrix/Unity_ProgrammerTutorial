@@ -128,6 +128,7 @@ namespace Tutorial
                 foreach (var pHuman in pHumanGroup)
                     Debug.Log(pHuman.ToString());
             }
+
         }
     }
 }
