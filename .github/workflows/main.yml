@@ -22,6 +22,7 @@ jobs:
         dst_owner: andstor
         dst_repo_name: Unity_UnitTestTester
         dst_branch: master
+        clean: true
         src_branch: master
         username: KorStrixBot
         email: KorStrixBot@gmail.com
