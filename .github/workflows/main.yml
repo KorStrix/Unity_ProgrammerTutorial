@@ -18,12 +18,10 @@ jobs:
       with:
         personal_token: ${{ secrets.PERSONAL_TOKEN }}
         src_path: /.
-        dst_path: /wiki/
+        dst_path: /UnityProject/Packages/
         dst_owner: andstor
-        dst_repo_name: andstor.github.io
+        dst_repo_name: Unity_UnitTestTester
         dst_branch: master
         src_branch: master
-        src_wiki: true
-        dst_wiki: false
-        username: nutsbot
-        email: andr3.storhaug+bot@gmail.com
+        username: KorStrixBot
+        email: KorStrixBot@gmail.com
